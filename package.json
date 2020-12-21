@@ -1,0 +1,149 @@
+{
+  "name": "react-luban-h5",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A react application",
+  "scripts": {
+    "build": "luban-cli-service build",
+    "compile": "tsc --noEmit --diagnostics",
+    "eslint": "eslint --config .eslintrc --ext .tsx,.ts src/",
+    "eslint:fix": "eslint --fix --config .eslintrc --ext .tsx,.ts src/",
+    "format:check:style": "prettier --check 'src/**/*.{css,less}'",
+    "format:check:ts": "prettier --check 'src/**/*.{ts,tsx}'",
+    "format:style": "prettier --write 'src/**/*.{css,less}'",
+    "format:ts": "prettier --write 'src/**/*.{ts,tsx}'",
+    "inspect": "luban-cli-service inspect",
+    "serve": "luban-cli-service serve --open",
+    "start": "npm run serve",
+    "stylelint": "stylelint src/**/*.{css,less}",
+    "test": "jest",
+    "test:coverage": "jest --coverage --color",
+    "test:update": "jest -u"
+  },
+  "dependencies": {
+    "@luban-hooks/use-request": "^1.1.2",
+    "axios": "^0.19.2",
+    "luban-router": "1.2.1",
+    "postcss-aspect-ratio-mini": "^1.1.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/preset-typescript": "^7.8.0",
+    "@babel/runtime": "^7.7.2",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@luban-cli/cli-plugin-babel": "~1.4.2",
+    "@luban-cli/cli-plugin-commit": "~1.4.2",
+    "@luban-cli/cli-plugin-eslint": "~1.4.2",
+    "@luban-cli/cli-plugin-fetch": "~1.4.2",
+    "@luban-cli/cli-plugin-router": "~1.4.2",
+    "@luban-cli/cli-plugin-service": "~1.4.2",
+    "@luban-cli/cli-plugin-stylelint": "~1.4.2",
+    "@luban-cli/cli-plugin-typescript": "~1.4.2",
+    "@luban-cli/cli-plugin-unit-test": "~1.4.2",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/enzyme-to-json": "^1.5.3",
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "autoprefixer": "^9.7.1",
+    "babel-loader": "^8.0.6",
+    "commitizen": "^4.1.2",
+    "core-js": "^3.4.2",
+    "css-loader": "^3.4.0",
+    "cssnano": "^4.1.10",
+    "cz-conventional-changelog": "^3.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-config-leap": "^1.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "file-loader": "^5.1.0",
+    "husky": "^3.0.9",
+    "jest": "^25.1.0",
+    "less": "^3.10.0",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.4.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.19.1",
+    "style-loader": "^1.1.3",
+    "stylelint": "^13.5.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "ts-jest": "^25.2.1",
+    "ts-loader": "^7.0.0",
+    "typescript": "~3.8.3",
+    "url-loader": "^3.0.0"
+  },
+  "__luban_config__": {
+    "projectName": "react-luban-h5",
+    "language": "ts",
+    "eslint": "leap",
+    "cssSolution": "less",
+    "stylelint": true,
+    "router": true,
+    "store": false,
+    "unitTest": true,
+    "fetch": true,
+    "commit": true,
+    "plugins": {
+      "@luban-cli/cli-plugin-service": {
+        "projectName": "react-luban-h5"
+      },
+      "@luban-cli/cli-plugin-babel": {},
+      "@luban-cli/cli-plugin-eslint": {},
+      "@luban-cli/cli-plugin-router": {},
+      "@luban-cli/cli-plugin-stylelint": {},
+      "@luban-cli/cli-plugin-typescript": {},
+      "@luban-cli/cli-plugin-unit-test": {},
+      "@luban-cli/cli-plugin-fetch": {},
+      "@luban-cli/cli-plugin-commit": {}
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run eslint",
+      "npm run format:check:ts"
+    ],
+    "src/**/*.{css,less}": [
+      "npm run stylelint",
+      "npm run format:check:style"
+    ]
+  }
+}
